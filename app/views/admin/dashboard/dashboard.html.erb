@@ -1,0 +1,7 @@
+
+<%= link_to "Upload Resume", new_admin_resume_path, class: :btn %><br><br>
+
+<% if @resume %>
+  <%= link_to "View Resumes", admin_resumes_path, class: :btn %><br><br>
+  <%= link_to "View Latest Resume", admin_resume_path(@resume), class: :btn %><br><br>
+<% end %>

@@ -1,0 +1,14 @@
+  <h4>All Resumes</h4>
+
+  <div class="row">
+    <% @resumes.each do |resume| %>
+      <div class="col s4">
+        <div class="card medium" id="grayscale">
+          <div class="card-image">
+            <%= image_tag resume.image.url, class: "responsive-img" %>
+          </div>
+        </div>
+        <%= link_to "Delete", admin_resume_path(resume.id), method: :delete, class: "btn" %></center></p>
+      </div>
+    <% end %>
+  </div>
